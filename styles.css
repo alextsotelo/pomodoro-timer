@@ -6,10 +6,8 @@
 }
 
 .container {
-    border: 2px solid red;
 }
 .progress-bar {
-    border: 2px solid green;
 }
 
 body {
@@ -32,7 +30,6 @@ body {
     margin-top: 7px;
 }
 .container .time-options {
-    border: 2px solid aqua;
     height: 60px;
     width: 100%;
     display: flex;
@@ -98,7 +95,6 @@ body {
 }
 
 .container .control-buttons {
-    border: 2px solid blue;
     height: 60px;
     width: 100%;
     display: flex;
