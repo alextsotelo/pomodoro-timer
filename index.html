@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="pomodoro.js" defer></script>
     <title> Pomodoro Timer </title>
 </head>
 <body>
     <div class="container">
         <h3 class="app-title"> pomodoro timer </h3>
         <div class="time-options"> 
-            <button class="pomodoro active"> pomodoro </button>
-            <button class="short-break"> short break </button>
-            <button class="long-break"> long break </button>
+            <button class="pomodoro active" onclick="getType(this)" > pomodoro </button>
+            <button class="short-break" onclick="getType(this)" > short break </button>
+            <button class="long-break" onclick="getType(this)" > long break </button>
         </div>
         <div class="progress-bar">
             <div class="progress-bar-inner">
