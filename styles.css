@@ -62,7 +62,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
+    font-size: 14px;
     float: left; /* Not sure about this one, keep it for now */ 
     margin-left: 10px;
     border-radius: 5px;
@@ -129,10 +129,20 @@ body {
     justify-content: center;
     border-radius: 5px;
     margin-left: 12px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     text-align: center;
     cursor: pointer;
+}
+
+.container .control-buttons button:hover {
+    background: #4bbaff;
+    transition: background 0.35s ease-in;
+}
+
+.container .time-options button:hover {
+    background: #4bbaff;
+    transition: background 0.35s ease-in;
 }
 
 .container .control-buttons .stop-btn {
