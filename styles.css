@@ -8,7 +8,7 @@
 
 body {
     font-family: Helvetica;
-    background-image: url('/images/mountain-cave-bg.jpg');
+    background-image: url('images/mountain-cave-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
