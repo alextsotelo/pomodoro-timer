@@ -71,7 +71,7 @@ let updateTimerDisplay = () => {
     }
 
 
-    circularProgressBar.style.background = `conic-gradient(#664efe ${timerValue * multipleFactor}deg, #422f66 0deg`;
+    circularProgressBar.style.background = `conic-gradient(#1561f8e1 ${timerValue * multipleFactor}deg, #0a2569 0deg`;
     timer.innerHTML = `${formattedNumberInMinutes(timerValue)}`;
 
 }

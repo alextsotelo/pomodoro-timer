@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'coolvetica';
+    src: url('/fonts/coolvetica.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, sans-serif;
+    font-family: Helvetica, Verdana, sans-serif;
 }
 
 .container {
@@ -11,12 +16,22 @@
 }
 
 body {
-    background: #2d2c3e;
+    font-family: Helvetica;
+    background-image: url('/images/mountain-cave-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 .container {
     padding: 20px 20px 30px 20px;
     width: 340px;
-    background: #1e1b2e;
+    background-color: rgba(0, 59, 234, 0.074);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.094);
+    border-left: 1px solid rgba(255, 255, 255, 0.094);
+    box-shadow: 3px 3px 3px rgba(46, 46, 46, 0.094);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,8 +40,9 @@ body {
 }
 .container .app-title {
     text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
     color: #fff;
-    font-size: 16px;
+    font-size: 32px;
     margin-top: 7px;
 }
 .container .time-options {
@@ -42,11 +58,11 @@ body {
     height: 40px;
     width: 85px;
     color: #fff;
-    background: #422f66;
+    background: #1f8bca;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 11px;
     float: left; /* Not sure about this one, keep it for now */ 
     margin-left: 10px;
     border-radius: 5px;
@@ -54,12 +70,12 @@ body {
 }
 
 .container .time-options button.active {
-    background: #7d59c1;
+    background: #4bbaff;
 }
 .container .progress-bar {
     height: 220px;
     width: 220px;
-    background: conic-gradient(#664efe 360deg, #422f66 0deg);
+    background: conic-gradient(#1561f8e1 360deg, #0a2569 0deg);
     border-radius: 100%;
     margin: auto;
     margin-top: 30px;
@@ -85,7 +101,7 @@ body {
 .container .progress-bar-inner {
     height: 200px;
     width: 200px;
-    background: #1e1b2e;
+    background: #0a216e;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -106,7 +122,7 @@ body {
     all: unset;
     height: 40px;
     width: 100px;
-    background: #7d59c1;
+    background: #1f8bca;
     color: #fff;
     display: flex;
     align-items: center;
@@ -114,6 +130,7 @@ body {
     border-radius: 5px;
     margin-left: 12px;
     font-size: 12px;
+    font-weight: bold;
     text-align: center;
     cursor: pointer;
 }
