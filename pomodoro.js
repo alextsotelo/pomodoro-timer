@@ -26,7 +26,7 @@ let getType = (elem, type) => {
 const timer_type_pomodoro = "pomodoro";
 const timer_type_shortbreak = "short break";
 const timer_type_longbreak = "long break";
-const audio = new Audio('.soundEffects/lofi-alarm.mp3');
+const audio = new Audio('soundEffects/lofi-alarm.mp3');
 let pomodoroType = timer_type_pomodoro; // Default timer type is pomodoro
 
 const pomodoroTimeInSeconds = 1500; // 60sec x 25min = 1500;
