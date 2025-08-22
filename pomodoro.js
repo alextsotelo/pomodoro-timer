@@ -98,3 +98,48 @@ let stopTimer = () => {
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
 resetBtn.addEventListener("click", resetTimer);
+
+const settingsBtn = document.querySelector(".container .control-buttons .settings-btn");
+const settingsContainer = document.querySelector(".settings-container");
+
+settingsBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    settingsContainer.classList.toggle("show"); // Toggle the visibility of the settings container
+});
+
+window.addEventListener("click", (e) => {
+    if (!settingsContainer.contains(e.target)) {
+        settingsContainer.classList.remove("show");
+    }
+});
+
+const themeBtn = document.querySelector(".settings-container .theme-btn");
+const themesContent = document.querySelector(".settings-container .themes-content");
+themeBtn.addEventListener("click", () => {
+    themesContent.classList.toggle("show");
+});
+
+const body = document.body;
+const themeImages = {
+    'rainy cafe' : '/images/rainy-cafe.png',
+    'cityscape' : '/images/cityscape.png',
+    'zugspitze' : '/images/zugspitze.jpg',
+    'floating island' : '/images/floating-island.jpg',
+    'enchanted cottage' : '/images/enchanted-cottage.jpg',
+    'tropical island' : '/images/tropical-island.jpg',
+    'minimalist blue' : '/images/minimalist-blue.jpg'
+};
+
+themesContent.addEventListener("click", (event) => {
+    if (event.target.tagName === 'A') {
+        event.preventDefault();
+    }
+
+    const selectedTheme = event.target.textContent.trim();
+
+    body.style.backgroundImage = `url(${themeImages[selectedTheme]})`;
+
+    themeBtn.textContent = selectedTheme;
+
+    themesContent.classList.remove('show');
+});
