@@ -121,13 +121,13 @@ themeBtn.addEventListener("click", () => {
 
 const body = document.body;
 const themeImages = {
-    'rainy cafe' : '/images/rainy-cafe.png',
-    'cityscape' : '/images/cityscape.png',
-    'zugspitze' : '/images/zugspitze.jpg',
-    'floating island' : '/images/floating-island.jpg',
-    'enchanted cottage' : '/images/enchanted-cottage.jpg',
-    'tropical island' : '/images/tropical-island.jpg',
-    'minimalist blue' : '/images/minimalist-blue.jpg'
+    'rainy cafe' : 'images/rainy-cafe.png',
+    'cityscape' : 'images/cityscape.png',
+    'zugspitze' : 'images/zugspitze.jpg',
+    'floating island' : 'images/floating-island.jpg',
+    'enchanted cottage' : 'images/enchanted-cottage.jpg',
+    'tropical island' : 'images/tropical-island.jpg',
+    'minimalist blue' : 'images/minimalist-blue.jpg'
 };
 
 themesContent.addEventListener("click", (event) => {
